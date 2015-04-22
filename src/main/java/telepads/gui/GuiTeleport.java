@@ -34,7 +34,9 @@ public class GuiTeleport extends GuiScreen{
 	float sd = 0;
 
 	public GuiTeleport(EntityPlayer player, TETelepad te){
-		Minecraft.getMinecraft().gameSettings.guiScale = 2;
+//		Minecraft.getMinecraft().gameSettings.guiScale = 2;
+	int currentGui=Minecraft.getMinecraft().gameSettings.guiScale;
+	Minecraft.getMinecraft().gameSettings.guiScale = currentGui;
 
 		this.te = te;
 		this.player = player;
